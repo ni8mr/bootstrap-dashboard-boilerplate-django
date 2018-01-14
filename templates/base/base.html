@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+{% include 'base/header.html' %}
+<body>
+<div class="page">
+    <!-- Main Navbar-->
+    {% include 'base/navbar.html' %}
+
+    <div class="page-content d-flex align-items-stretch">
+        <!-- Side Navbar -->
+        {% include 'base/sidebar.html' %}
+        <!--Page content-->
+        <div class="content-inner">
+            {% block content %}
+            {% endblock %}
+            <!--Footer-->
+            {% include 'base/footer.html' %}
+        </div>
+    </div>
+</div>
+<!-- Javascript files-->
+{% include 'base/js.html' %}
+</body>
+</html>
